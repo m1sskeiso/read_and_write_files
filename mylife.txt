@@ -1,0 +1,5 @@
+[
+    "Time is gold",
+    "Love yourself",
+    "You can wear anything"
+]
