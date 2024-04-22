@@ -6,9 +6,13 @@ with open(input_file, 'r') as file:
     # Read all lines from the file and convert them to integers
     numbers = [int(num) for num in file.readlines()]
 
+# Check if the list of numbers is empty
+if not numbers:
+    # If the list is empty, print a message indicating that the input file is empty
+    print("The input file is empty.")
+else:
     # Create a list containing the square of each even number from the input file
     even_squares = [str(num**2) for num in numbers if num % 2 == 0]
-
     # Create a list containing the cube of each odd number from the input file
     odd_cubes = [str(num**3) for num in numbers if num % 2 != 0]
 
