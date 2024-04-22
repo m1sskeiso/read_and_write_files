@@ -13,3 +13,5 @@ with open(input_file, 'r') as file:
         if len(data) == 2:
             name = data[0].strip()
             gwa = data[1].strip()
+
+# Find the student with the highest GWA
