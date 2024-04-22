@@ -11,10 +11,13 @@ with open(input_file, 'r') as file:
     numbers = [int(num) for num in file.readlines()]
     print("Contents of numbers:", numbers)
 
+    if not numbers:
+        print("Input file is empty.")
+    else:
 # Append even numbers to even_numbers list and odd numbers to odd_numbers list
-    for num in numbers:
-        if num % 2 == 0:
-            even_numbers.append(str(num))
+        for num in numbers:
+            if num % 2 == 0:
+                even_numbers.append(str(num))
         else:
             odd_numbers.append(str(num))
             
