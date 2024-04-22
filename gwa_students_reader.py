@@ -13,7 +13,15 @@ with open(input_file, 'r') as file:
         if len(data) == 2:
             name = data[0].strip()
             gwa = data[1].strip()
-            gwa = float(gwa)
+            try:
+                # Convert GWA into float
+                gwa = float(gwa)
+                # Store the name and GWA as key-value pairs in the dictionary
+                student_gwa[name] = gwa
+            except ValueError:
+                print(f"Ignoring line: {line.strip()} - GWA value is not a valid number.")
+        else:
+            print(f"Ignoring line: {line.strip()} - does not contain exactly two values separated by a comma.")
                 
 # Find the student with the highest GWA
 if student_gwa:
