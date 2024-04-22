@@ -12,3 +12,10 @@ with open(input_file, 'r') as file:
 # Create a list containing the cube of each odd number from the input file
     odd_cubes = [str(num**3) for num in numbers if num % 2 != 0]
 
+# Open the output file 'double.txt' in write mode
+# Write each even square to 'double.txt', separated by newline
+
+# Open the output file 'triple.txt' in write mode
+# Write each odd cube to 'triple.txt', separated by newline
+
+
