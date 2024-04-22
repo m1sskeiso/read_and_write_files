@@ -18,8 +18,8 @@ with open(input_file, 'r') as file:
         for num in numbers:
             if num % 2 == 0:
                 even_numbers.append(str(num))
-        else:
-            odd_numbers.append(str(num))
+            else:
+                odd_numbers.append(str(num))
             
 # Write even numbers to 'even.txt'
 with open('even.txt', 'w') as even_file:
